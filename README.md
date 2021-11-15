@@ -20,21 +20,21 @@ ATtiny10Core add-on
 
 Дополнительно реализованы функции управления тактированием:
 * setSystemPrescaler() - установить предделитель системной частоты
-**CORE_PRESCALER_1** 
-**CORE_PRESCALER_2**
-**CORE_PRESCALER_4**
-**CORE_PRESCALER_8**
-**CORE_PRESCALER_16**
-**CORE_PRESCALER_32**
-**CORE_PRESCALER_64**
-**CORE_PRESCALER_128**
-**CORE_PRESCALER_256**
-**CORE_PRESCALER_DEFAULT**
+* **CORE_PRESCALER_1** 
+* **CORE_PRESCALER_2**
+* **CORE_PRESCALER_4**
+* **CORE_PRESCALER_8**
+* **CORE_PRESCALER_16**
+* **CORE_PRESCALER_32**
+* **CORE_PRESCALER_64**
+* **CORE_PRESCALER_128**
+* **CORE_PRESCALER_256**
+* **CORE_PRESCALER_DEFAULT**
 
 * setSystemClock() - выбрать источник тактирования
-**CORE_CLOCK_INTERNAL** 	- Внутренний источник 8 МГц
-**CORE_CLOCK_WDT**		 	- Внутренний источник WDT, 128 кГц
-**CORE_CLOCK_EXTERNAL**		- Внешнее тактирование, до 12 МГц
+* **CORE_CLOCK_INTERNAL** 	- Внутренний источник 8 МГц
+* **CORE_CLOCK_WDT**		 	- Внутренний источник WDT, 128 кГц
+* **CORE_CLOCK_EXTERNAL**		- Внешнее тактирование, до 12 МГц
 
 Дополнительно в меню платы можно:
 * Выбрать частоту тактирования
