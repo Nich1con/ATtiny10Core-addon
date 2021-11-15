@@ -1,0 +1,56 @@
+#####################################
+## Arduino core for ATtiny10/9/5/4 ##
+#####################################
+
+attiny10.build.core=tiny
+attiny10.build.board=AVR_ATTINY10
+attiny10.build.extra_flags={extra_flags.adci} {extra_flags.timeri} {extra_flags.millise}
+
+attiny10.name=ATtiny10/9/5/4
+
+attiny10.upload.tool=arduino:avrdude
+attiny10.upload.maximum_data_size=32
+attiny10.upload.speed=115200
+
+menu.chip=MCU
+menu.clock=Clock
+menu.adc=ADC
+menu.timer=Timer
+menu.millis=Millis/Micros
+
+attiny10.menu.chip.10=ATtiny10
+attiny10.menu.chip.10.build.mcu=attiny10
+attiny10.menu.chip.10.upload.maximum_size=1024
+attiny10.menu.chip.9=ATtiny9
+attiny10.menu.chip.9.build.mcu=attiny9
+attiny10.menu.chip.9.upload.maximum_size=1024
+attiny10.menu.chip.5=ATtiny5
+attiny10.menu.chip.5.build.mcu=attiny5
+attiny10.menu.chip.5.upload.maximum_size=512
+attiny10.menu.chip.4=ATtiny4
+attiny10.menu.chip.4.build.mcu=attiny4
+attiny10.menu.chip.4.upload.maximum_size=512
+
+attiny10.menu.clock.8=8 MHz
+attiny10.menu.clock.8.build.f_cpu=8000000L
+attiny10.menu.clock.1=1 MHz
+attiny10.menu.clock.1.build.f_cpu=1000000L
+attiny10.menu.clock.128=128 kHz
+attiny10.menu.clock.128.build.f_cpu=128000L
+
+attiny10.menu.adc.adc_init=Initialize
+attiny10.menu.adc.adc_init.extra_flags.adci=-D_TINY10_ADC_INIT
+attiny10.menu.adc.adc_noinit=Disable
+attiny10.menu.adc.adc_noinit.extra_flags.adci=
+
+attiny10.menu.timer.timer_init=Initialize
+attiny10.menu.timer.timer_init.extra_flags.timeri=-D_TINY10_TIMER_INIT
+attiny10.menu.timer.timer_noinit=Disable
+attiny10.menu.timer.timer_noinit.extra_flags.timeri=
+
+attiny10.menu.millis.millis_en=Full implement
+attiny10.menu.millis.millis_en.extra_flags.millise=-D_TINY10_MILLIS_IMPLEMENT
+attiny10.menu.millis.millis_wdt=WDT millis
+attiny10.menu.millis.millis_wdt.extra_flags.millise=-D_TINY10_MILLIS_WDT
+attiny10.menu.millis.millis_off=Do not implement
+attiny10.menu.millis.millis_off.extra_flags.millise=
