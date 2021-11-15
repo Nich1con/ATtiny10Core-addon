@@ -2,6 +2,14 @@ ATtiny10Core add-on
 ============
 Дополнение к ядру ATtiny10Core (https://github.com/technoblogy/attiny10core)
 
+### Установка
+
+* Установить ядро ATtiny10Core (https://github.com/technoblogy/attiny10core)
+* Перейти по пути **C:\Users\username\AppData\Local\Arduino15\packages\ATtiny10Core**
+* Скачать архив этого репозитория
+* Заменить папку **hardware** той, что лежит в архиве
+* Перезапустить Arduino IDE
+
 ### Возможности
 Добавляет все стандартные функции ввода-вывода, привычные пользователям Arduino.
 Список реализованных функций:
@@ -19,7 +27,7 @@ ATtiny10Core add-on
 * **shiftIn()**
 
 Дополнительно реализованы функции управления тактированием:
-* setSystemPrescaler() - установить предделитель системной частоты
+* **setSystemPrescaler()** - установить предделитель системной частоты
 * **CORE_PRESCALER_1** 
 * **CORE_PRESCALER_2**
 * **CORE_PRESCALER_4**
@@ -31,7 +39,7 @@ ATtiny10Core add-on
 * **CORE_PRESCALER_256**
 * **CORE_PRESCALER_DEFAULT**
 
-* setSystemClock() - выбрать источник тактирования
+* **setSystemClock()** - выбрать источник тактирования
 * **CORE_CLOCK_INTERNAL** 	- Внутренний источник 8 МГц
 * **CORE_CLOCK_WDT**		 	- Внутренний источник WDT, 128 кГц
 * **CORE_CLOCK_EXTERNAL**		- Внешнее тактирование, до 12 МГц
@@ -42,10 +50,3 @@ ATtiny10Core add-on
 * Отключить и включить инициализацию таймера 0 (**analogWrite()**)
 * Выбрать вариант реализации **millis()** и **micros()**
 
-### Установка
-
-* Установить ядро ATtiny10Core (https://github.com/technoblogy/attiny10core)
-* Перейти по пути **C:\Users\username\AppData\Local\Arduino15\packages\ATtiny10Core**
-* Скачать архив этого репозитория
-* Заменить папку **hardware** той, что лежит в архиве
-* Перезапустить Arduino IDE
