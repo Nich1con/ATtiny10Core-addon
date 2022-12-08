@@ -8,15 +8,15 @@ void pinMode(uint8_t pin, uint8_t mode) {
   switch (mode) {
     case INPUT:		
       DDRB &= ~ 1 << pin;
-      PORTB &= ~ 1 << pin;
+      PUEB &= ~ 1 << pin;
       return;
     case OUTPUT:
       DDRB |= 1 << pin;
-      PORTB &= ~ 1 << pin;
+      PUEB &= ~ 1 << pin;
       return;
     case INPUT_PULLUP:
       DDRB &= ~ 1 << pin;
-      PORTB |= 1 << pin;
+      PUEB |= 1 << pin;
       return;
   }
 }
